@@ -6,7 +6,7 @@
 
   <groupId>com.github.nikita-volkov</groupId>
   <artifactId>embrace</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.1</version>
   <packaging>jar</packaging>
 
   <name>Embrace</name>
@@ -16,7 +16,7 @@
   <licenses>
     <license>
       <name>MIT/X11</name>
-      <url>http://www.github.com/nikita-volkov/sext/LICENSE</url>
+      <url>http://www.github.com/nikita-volkov/embrace/LICENSE</url>
     </license>
   </licenses>
 
@@ -29,9 +29,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:nikita-volkov/sext.git</connection>
-    <url>scm:git:git@github.com:nikita-volkov/sext.git</url>
-    <developerConnection>scm:git:git@github.com:nikita-volkov/sext.git</developerConnection>
+    <connection>scm:git:git@github.com:nikita-volkov/embrace.git</connection>
+    <url>scm:git:git@github.com:nikita-volkov/embrace.git</url>
+    <developerConnection>scm:git:git@github.com:nikita-volkov/embrace.git</developerConnection>
   </scm>
 
   <parent>
@@ -127,6 +127,9 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <useAgent>true</useAgent>
+        </configuration>
       </plugin>
     </plugins>
   </build>
