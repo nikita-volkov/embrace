@@ -6,17 +6,17 @@
 
   <groupId>com.github.nikita-volkov</groupId>
   <artifactId>embrace</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <packaging>jar</packaging>
 
-  <name>EmBrace</name>
+  <name>Embrace</name>
   <description>A tiny extension library embracing braceless coding style in Scala</description>
   <url>http://www.github.com/nikita-volkov/embrace</url>
 
   <licenses>
     <license>
       <name>MIT/X11</name>
-      <url>http://www.github.com/nikita-volkov/sext/LICENSE</url>
+      <url>http://www.github.com/nikita-volkov/embrace/LICENSE</url>
     </license>
   </licenses>
 
@@ -29,9 +29,9 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git@github.com:nikita-volkov/sext.git</connection>
-    <url>scm:git:git@github.com:nikita-volkov/sext.git</url>
-    <developerConnection>scm:git:git@github.com:nikita-volkov/sext.git</developerConnection>
+    <connection>scm:git:git@github.com:nikita-volkov/embrace.git</connection>
+    <url>scm:git:git@github.com:nikita-volkov/embrace.git</url>
+    <developerConnection>scm:git:git@github.com:nikita-volkov/embrace.git</developerConnection>
   </scm>
 
   <parent>
@@ -43,8 +43,8 @@
   <dependencies>
     <dependency>
       <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_2.10.0-M7</artifactId>
-      <version>2.0.M4-2.10.0-M7-B1</version>
+      <artifactId>scalatest_2.10.0-RC1</artifactId>
+      <version>2.0.M4-2.10.0-RC1-B1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -56,12 +56,12 @@
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
-      <version>2.10.0-M7</version>
+      <version>2.10.0-RC1</version>
     </dependency>
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-compiler</artifactId>
-      <version>2.10.0-M7</version>
+      <version>2.10.0-RC1</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
@@ -80,12 +80,12 @@
               <goal>testCompile</goal>
             </goals>
           </execution>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>doc-jar</goal>
-            </goals>
-          </execution>
+          <!--<execution>-->
+            <!--<id>attach-javadocs</id>-->
+            <!--<goals>-->
+              <!--<goal>doc-jar</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
         </executions>
       </plugin>
       <plugin>
@@ -127,6 +127,9 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <useAgent>true</useAgent>
+        </configuration>
       </plugin>
     </plugins>
   </build>
