@@ -51,6 +51,22 @@ How's that better? You have the logic applied to the argument sequentially, the 
     
     tuple $$ f
 
+##Side effect: `$` can be used instead of `match`
+
+####Scala:
+
+    x match {
+      case 1 => ...
+      case 2 => ...
+    }
+
+###Embrace:
+
+    x $ {
+      case 1 => ...
+      case 2 => ...
+    }
+
 ## Why `$`?
 The choice of this name has been inspired by the Haskell programming language in which there exists a similar standard function which works in kinda reverse order due to particular differences of the languages.
 
