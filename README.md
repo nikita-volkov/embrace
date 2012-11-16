@@ -51,7 +51,7 @@ How's that better? You have the logic applied to the argument sequentially, the 
     
     tuple $$ f
 
-##Side effect: `$` can be used instead of `match`
+##Unintended effect: `$` can be used instead of `match`
 
 ####Scala:
 
