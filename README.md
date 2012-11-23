@@ -32,7 +32,7 @@ Assuming the function you need to add is named `g` and the function you need to 
 
     def f ( a : List[Int] ) = a filter (_ % 2 == 0) map (_ * 2) $ g
 
-How's that better? You have the logic applied to the argument sequentially, the function looks like a flow of transformations applied to an input value instead of randomly placed operations. Code like that is much easier to write, read and refactor: you just append `$`-functions and just forget about the braces-management hell.
+How's that better? You have the logic applied to the argument sequentially, the function looks like a flow of transformations applied to an input value instead of scattered operations. Code like that is much easier to write, read and refactor: you just append `$`-functions and throw the braces management hell out of your head.
 
 ##Problem: You have a tuple which you want to pass as a parameter list to a function
 ####Scala solution #1:
