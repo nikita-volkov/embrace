@@ -76,9 +76,10 @@ The library is distributed in Maven Central repository, so just add the followin
     <dependency>
       <groupId>com.github.nikita-volkov</groupId>
       <artifactId>embrace</artifactId>
-      <version>0.1.1</version>
+      <version>0.1.3</version>
     </dependency>
 
 In your Scala code you just have to add the following import statement:
 
     import embrace._
+    
